@@ -107,7 +107,7 @@ header ul li a{
 }
 
 ul li a:hover{
-    color: rgb(100, 100, 100);
+    color: rgb(176, 174, 174)
 }
 
  
@@ -135,6 +135,7 @@ img:hover{
     height: auto;
     margin: 70px auto ;
     padding:  60px;
+    margin-bottom: 2rem;
     text-align: center;
     align-items: center;
     display: flex;
