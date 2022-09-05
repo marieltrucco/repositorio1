@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+html{
+    font-size: 62.5%;
+}
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+}
+
+.logo-position{
+    display: inline;
+    margin:20px auto ;
+    max-width: auto;
+    max-height: 160px;
+    position:sticky;
+}
+
+
+body{
+    background-image: url(../imagen/mestizos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.4);
+
+    
+}
+
+h1,h2{
+    width: 100%;
+    height: 10%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+
+
+}
+
+
+p{
+    font-family: 'Oswald', sans-serif;  
+    font-size: 2rem;
+    line-height: 2.2;
+    font-weight: 400;
+    color: black;
+
+    
+
+}
+nav{
+    display: grid;
+    position: center;
+    padding: 6px 20px;
+   
+    
+}
+
+header ul{
+    list-style: none;
+    display:inline-block ;
+    margin-left: 30px;
+    position: static;
+
+}
+
+header ul li{
+
+    display: inline-block;
+    margin-right: 20px;
+}
+header ul li a{
+    color: black;
+    text-decoration: double;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+
+}
+.bg-black{
+    color: rgb(0, 0, 0, 0.3);
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+
+.text-style{
+    font-style: normal;
+       
+
+}
+.pie-footer{
+    width: 100%;
+    font-size: 2rem;
+}
+
+.pie-icon{
+    width: 70px;
+}
+
+ul li a:hover{
+    color: rgb(100, 100, 100);
+}
+
+ 
+.img-size{
+ width: 20rem;
+ height: 50rem;
+ 
+}
+.body{
+    width: 100;
+    overflow: hidden;
+}
+
+
+
+/*boxmodel*/
+
+ 
+
+.labanda__img{
+    width: 100%;
+    height: auto;
+    margin: 70px auto ;
+    padding:  60px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    
+}
+
+.nav__logo{
+    display: grid;
+    justify-content:space-around;
+
+}
+
+
+
+
+
+
+.contacto__contacto{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    justify-content: center;
+    
+    
+    
+}
+.multimedia__main{
+     padding-left: 130px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.labanda__title{
+    background-color:rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-size:xx-large;
+}
+.multimedia__title{
+    background-color:none;
+    text-align: center;
+}
+.shows__title{
+    background-color:none ;
+    text-align: center;
+
+}
+.discografia__title{
+    background-color: none;
+    text-align:center;
+    text-align: xx-large;
+}
+.discografia__img{
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    
+
+}
+.contacto__title{
+    text-align: center;
+    display: flex;
+    justify-content:center;
+   
+}
+.bg-grey{
+    background-color: rgba(255, 255, 255, 0.4);
+    max-width:auto;
+    max-height: max-content;
+}
+
+/*GRID*/
+
+
+.grid-logo{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr) ;
+    grid-template-rows: repeat(1, 1fr) ;
+    grid-template-areas: 
+    "logo";
+}
+#nav{
+    grid-template-columns: nav;
+}
+
+.grid-labanda{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+    "eric" "emi" "migui" "juani"
+   
+    
+}
+#nav{
+    grid-template-columns: nav;
+}
+
+#eric{
+    grid-template-columns:  eric;
+}
+#emi{
+    grid-template-columns: emi;
+}
+    
+#migui{
+    grid-template-columns: migui;
+
+}
+#juani{
+    grid-template-columns: juani;
+
+}
+#footer{
+   grid-template-columns: footer;
+}
+.grid-discos{
+    width: 99%;
+    display: grid;
+    grid-template-columns:repeat(2, 1f);
+    grid-template-rows: repeat (1, repeat);
+    grid-template-areas:
+    "mestizos1 mestizos2 ";
+    
+}
+#mestizos1{
+    grid-template-areas: mestizos1;
+}
+#mestizos2{
+    grid-template-areas: confluencia;
+}
+.grid-header{
+    width: 99%;
+    display: grid;
+    grid-template-columns:repeat(1, 1fr) ;
+    grid-template-rows:repeat(1,repeat) ;
+    grid-template-areas:
+    "nav" ;
+
+}
+#nav{
+    grid-template-areas: nav;
+}
+
+.grid-multimedia{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1, repeat);
+    grid-template-areas: 
+    "v1 v2";
+}    
+#video1{
+    grid-template-areas: v1;
+    
+}
+#video2{
+    grid-template-areas: v2;
+}
+
+
+
+@media screen and (max-width:480px){
+  .grid-labanda{
+   grid-template-columns:repeat(1,1fr);
+   grid-template-rows:repeat(5,repeat);
+   grid-template-areas: 
+   "eric"
+   "emi"
+   "migui"
+   "juani"
+   "footer";
+
+
+   
+
+}
+.grid-discos{
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-rows: 2;
+    grid-template-areas:
+    "mestizos1"
+    "mestizos2 ";
+}
+
+.grid-logo{
+    width: 480px;
+    height: auto;
+    flex-direction:column;
+    align-items: center;
+    
+   
+}
+
+
+body{
+    background-image: url(../imagen/pajaromobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+nav ul li a{
+    width: 400px;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+    
+
+}
+
+
+.grid-discos{
+    width: 99%;
+    display: grid;
+    grid-template-columns:repeat(1, 1f);
+    grid-template-rows: repeat (2, repeat);
+    grid-template-areas:
+    "mestizos1"
+    "mestizos2 ";
+    
+}
+header{
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    max-width:100%;
+	height: auto;
+
+}
+.grid-multimedia{
+     width:100vw;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     grid-template-rows: repeat(2, repeat);
+     grid-template-areas: 
+     "v1"
+     "v2";
+
+}
+
+.multimedia__main{
+     height: 0;
+     width: 0;
+     display:contents;
+     justify-content:space-around;
+    
+} 
+nav{
+    display:inline-block;
+    position: center;
+    padding: 6px 20px;
+  
+}
+
+picture:hover{
+    scale:0;
+    
+}
+    
+}
+
+/*degrade y movimiento
+link
+
+/* degrade de abajo hacia arriba-colores / cssgradient.io
+.linear-gradient{
+    background: linear-gradient(to top, grey white);
+
+}
+
+/*cuando pasa por arriba del elemento se transforma/translada elemento 
+.transform:hover{
+    transform: translateX(20px); /* son en hover,se puede usar como position
+    cursor: pointer ; /*aparece la manito*/
+    transition: transform 1s ; /*hace que el movimiento sea mas suave
+}
+/*
+/*permite rotar un elemento
+.rotate:hover{
+    transform:rotateZ(20deg);
+    cursor: pointer ;
+    transition: transform 1s;
+}
+/*modifica el with
+.scale:hover{
+    transform: scaleX(1.2);
+    cursor:pointer;
+    transition:transform 1s;
+
+}
+/* vuelca el elemento 
+.skew{
+    transform: scaleX(10deg);
+    cursor: pointer;
+    transition: 1s ;
+
+}/*
+
+/*ANIMACIONES (keyframes)
+
+@keyframes animateDiv {
+    0%{width: 100px;}
+    50%{width: 200px; background-color:grey}
+    100%{width: 100px;}
+}
+.animate{
+    animation-name: animateDiv ;
+    animation-duration: 5s ;
+    animation-iteration-count:infinite ;
+    animation-timing-function: lineal;
+    animation-delay: 1s; 
+}
+.transition{
+    transition: all ;
+    width: 300px;
+    
+}
+.transition:hover{
+    transition: all;
+    cursor: pointer;
+}
+
+/*otra forma  from(principio) to(hasta)
+@keyframes textAlfa{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+h1{
+    animation-name: textAlfa;
+    animation-duration: 3;
+}*/
+
